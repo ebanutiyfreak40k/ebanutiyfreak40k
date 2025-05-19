@@ -1,7 +1,44 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+  }
+</style>
+</head>
 <body>
-<h1>●▬▬▬▬▬▬▬▬▬▬▬▬●▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬●▬▬▬▬▬▬▬▬▬▬▬●
+  <video autoplay loop muted>
+    <source src="background/background.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+  <div class="content">
+    <h1>●▬▬▬▬▬▬▬▬▬▬▬▬●▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬●▬▬▬▬▬▬▬▬▬▬▬●
 एक लटकत आंग, रिकाम्या मळबांत, दैवाचो एक निर्जीव अंकुर, मोगान गेलो.
 थकल्लो आनी मार खाल्लो, तो गुन्यांवकार आनी विसरलो, काळखांतल्यान वयर लटकून, मुखामळ नाशिल्लीं सपनां.
 
@@ -11,5 +48,6 @@
 
 ह्या संवसारांत मनीसजातीचें नशीब कितें थारायता? कांय अदृश्य जीव वा कायदो, जशें संवसाराचेर मंडरापी प्रभूचो हात? मनशाक आपले इत्सेचेर लेगीत सत्ता ना हें निदान खरें.
 ●▬▬▬▬▬▬▬▬▬▬▬▬●▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬●▬▬▬▬▬▬▬▬▬▬</h1>
+  </div>
 </body>
 </html>
