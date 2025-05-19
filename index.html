@@ -37,6 +37,21 @@
       opacity: 0.7;
       padding: 20px;
     }
+
+    .play-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-image: url('play-icon.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+    }
   </style>
 </head>
 <body>
@@ -55,9 +70,10 @@
     अपेसाचे सार म्हळ्यार सोडून दिवप<br>
     ह्या संवसारांत मनीसजातीचें नशीब कितें थारायता? कांय अदृश्य जीव वा कायदो, जशें संवसाराचेर मंडरापी प्रभूचो हात? मनशाक आपले इत्सेचेर लेगीत सत्ता ना हें निदान खरें.
   </div>
+  <button class="play-button" id="play-button"></button>
 
   <script>
-    document.addEventListener('click', function() {
+    document.getElementById('play-button').addEventListener('click', function() {
       var audio = document.getElementById('background-audio');
       audio.volume = 0.004;
       audio.play();
